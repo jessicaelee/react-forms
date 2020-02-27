@@ -7,7 +7,6 @@ function NewBoxForm({ addBox }) {
     /** Send {name, quantity} to parent
      *    & clear form. */
     const handleSubmit = evt => {
-        console.log("FORRMMDATA", formData)
         evt.preventDefault();
         addBox(formData);
         setFormData(INITIAL_STATE);
